@@ -1,0 +1,22 @@
+{% load staticfiles %}
+<html>
+  <head>
+  </head>
+  <body>
+
+  <h2></h2>
+
+  <p><a id='contact_list' name='page_link' url='{% url "contact_list" %}' href='#'>Contacts</a></p>
+  <p><a id='city_list' name='page_link' url='{% url "city_list" %}' href='#'>Cities</a></p>
+  <p><a id='state_list' name='page_link' url='{% url "state_list" %}' href='#'>States</a></p>
+
+  <p><a id='contact_create' name='form_link' url='{% url "contact_create" %}' href='#'>New Contact</a></p>
+  <p><a id='city_create' name='form_link' url='{% url "city_create" %}' href='#'>New City</a></p>
+  <p><a id='state_create' name='form_link' url='{% url "state_create" %}' href='#'>New State</a></p>
+
+  <div id='form'></div>
+  <div id='ajax'></div>
+
+  <script src='{% static "js/index.js" %}'></script>
+  </body>
+</html>

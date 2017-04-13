@@ -1,0 +1,9 @@
+{% if contact_list %}
+  {% for contact in contact_list %}
+    <p>{{ contact.first_name }} {{ contact.last_name }}</p>
+    <p>{{ contact.phone}} {{ contact.email}}</p>
+    <p>{{ contact.city }}, {{ contact.city.state }}</p>
+  {% endfor %}
+{% else %}
+  <p>There are no contacts yet</p>
+{% endif %}

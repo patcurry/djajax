@@ -1,0 +1,7 @@
+{% if city_list %}
+  {% for city in city_list %}
+    <p>{{ city }}</p>
+  {% endfor %}
+{% else %}
+  <p>There are no cities yet</p>
+{% endif %}

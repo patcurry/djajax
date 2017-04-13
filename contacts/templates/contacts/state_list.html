@@ -1,0 +1,7 @@
+{% if state_list %}
+  {% for state in state_list %}
+    <p>{{ state.state }}</p>
+  {% endfor %}
+{% else %}
+  <p>There are no states yet</p>
+{% endif %}
